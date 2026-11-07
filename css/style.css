@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #030303;
+    color: #f1f1f1;
+    min-height: 2000px; 
+}
+
+.header-principal {
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+    background-color: #030303;
+    border-bottom: 1px solid #272727;
+    padding: 14px 28px;
+}
+
+.logo-music {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icone-logo {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.titulo-logo {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.status-perfil {
+    font-size: 12px;
+    font-weight: bold;
+    color: #aaaaaa;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    padding: 4px 12px;
+    border-radius: 14px;
+    float: right;
+    margin-top: 2px;
+}
+
+.container-principal {
+    width: 90%;
+    max-width: 760px;
+    margin: 30px auto;
+}
+
+
+.tela-video {
+    position: relative; /* PONTO CRUCIAL: Âncora espacial para os filhos absolutos */
+    background-color: #121212;
+    border: 1px solid #272727;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.imagem-video {
+    width: 100%;
+    height: 380px;
+    display: block;
+}
+
+.badge-qualidade-imagem {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #333333;
+}
+
+.badge-tipo-modo {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tempo-video {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.btn-flutuante {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ff0033;
+    border: 1px solid #ff0033;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-flutuante:hover {
+    background-color: #ff0033;
+    color: #ffffff;
+}
+
+.informacao-faixa {
+    background-color: #0f0f0f;
+    border: 1px solid #272727;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+    margin-bottom: 35px;
+}
+
+.titulo-faixa {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.artista-faixa {
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-bottom: 18px;
+}
+
+.barra-tempo {
+    width: 100%;
+    height: 4px;
+    background-color: #333333;
+    border-radius: 2px;
+    margin-bottom: 22px;
+    cursor: pointer;
+}
+
+.barra-atual {
+    width: 62%;
+    height: 100%;
+    background-color: #ff0000;
+    border-radius: 2px;
+}
+
+.controles-principais {
+    text-align: center;
+}
+
+.btn-acao-secundaria {
+    background: transparent;
+    color: #aaaaaa;
+    border: none;
+    font-size: 16px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.btn-acao-secundaria:hover {
+    color: #ffffff;
+}
+
+.btn-acao-controle {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+.btn-acao-play {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+    margin: 0 14px;
+    cursor: pointer;
+}
+
+.btn-acao-play:hover {
+    transform: scale(1.05);
+    background-color: #f2f2f2;
+}
+
+.secao-fila {
+    background-color: #0f0f0f;
+    border: 1px solid #272727;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 50px;
+}
+
+.titulo-fila {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.descricao-fila {
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-bottom: 18px;
+}
+
+.item-musica {
+    padding: 12px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.numero-faixa {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.dados-musica {
+    display: inline-block;
+    vertical-align: middle;
+    width: 72%;
+}
+
+.nome-musica {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.sub-musica {
+    font-size: 12px;
+    color: #888888;
+}
+
+.btn-tocar-item {
+    float: right;
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.btn-tocar-item:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.miniplayer-flutuante {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 330px;
+    z-index: 1000; 
+    background-color: #1f1f1f;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    padding: 10px 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85);
+}
+
+.miniplayer-topo {
+    margin-bottom: 8px;
+}
+
+.miniplayer-tag {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff0000;
+    letter-spacing: 0.5px;
+}
+
+.btn-fechar-mini {
+    float: right;
+    background: transparent;
+    color: #888888;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-fechar-mini:hover {
+    color: #ffffff;
+}
+
+.img-mini-thumb {
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #383838;
+}
+
+.miniplayer-textos {
+    display: inline-block;
+    vertical-align: middle;
+    width: 190px;
+    margin-left: 8px;
+}
+
+.miniplayer-titulo {
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.miniplayer-autor {
+    font-size: 11px;
+    color: #aaaaaa;
+}
+
+.btn-mini-play {
+    float: right;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}

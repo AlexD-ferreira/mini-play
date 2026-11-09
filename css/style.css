@@ -37,7 +37,6 @@ body {
     display: inline-block;
     font-size: 19px;
     font-weight: bold;
-    letter-spacing: -0.5px;
     color: #ffffff;
     margin: 0;
     vertical-align: middle;
@@ -59,15 +58,15 @@ body {
     width: 90%;
     max-width: 760px;
     margin: 30px auto;
+    
 }
 
 
 .tela-video {
-    position: relative; /* PONTO CRUCIAL: Âncora espacial para os filhos absolutos */
+    position: relative; 
     background-color: #121212;
     border: 1px solid #272727;
     border-radius: 8px 8px 0 0;
-    overflow: hidden;
 }
 
 .imagem-video {
@@ -78,7 +77,7 @@ body {
 
 .badge-qualidade-imagem {
     position: absolute;
-    top: 16px;
+    top: 10px;
     left: 16px;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.75);
@@ -86,7 +85,7 @@ body {
     font-size: 11px;
     font-weight: bold;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 1px solid #333333;
 }
 
@@ -179,7 +178,7 @@ body {
     text-align: center;
 }
 
-.btn-acao-secundaria {
+.botao-acao-secundaria {
     background: transparent;
     color: #aaaaaa;
     border: none;
@@ -188,11 +187,11 @@ body {
     cursor: pointer;
 }
 
-.btn-acao-secundaria:hover {
+.botao-acao-secundaria:hover {
     color: #ffffff;
 }
 
-.btn-acao-controle {
+.botao-acao-controle {
     background: transparent;
     color: #ffffff;
     border: none;
@@ -201,7 +200,7 @@ body {
     cursor: pointer;
 }
 
-.btn-acao-play {
+.botao-acao-play {
     background-color: #ffffff;
     color: #000000;
     border: none;
@@ -213,7 +212,7 @@ body {
     cursor: pointer;
 }
 
-.btn-acao-play:hover {
+.botao-acao-play:hover {
     transform: scale(1.05);
     background-color: #f2f2f2;
 }
@@ -269,7 +268,7 @@ body {
     color: #888888;
 }
 
-.btn-tocar-item {
+.botao-tocar-item {
     float: right;
     background-color: transparent;
     border: 1px solid #333333;
@@ -282,7 +281,7 @@ body {
     margin-top: 3px;
 }
 
-.btn-tocar-item:hover {
+.botao-tocar-item:hover {
     background-color: #ffffff;
     color: #000000;
 }
@@ -363,3 +362,4 @@ body {
     cursor: pointer;
     margin-top: 8px;
 }
+

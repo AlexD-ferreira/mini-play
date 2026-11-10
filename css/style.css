@@ -68,6 +68,10 @@ body {
     border: 1px solid #272727;
     border-radius: 8px 8px 0 0;
 }
+.flutuante{
+    position: relative;
+}
+
 
 .imagem-video {
     width: 100%;
@@ -116,7 +120,7 @@ body {
     border-radius: 4px;
 }
 
-.btn-flutuante {
+.botao-flutuante {
     position: absolute;
     bottom: 16px;
     right: 16px;
